@@ -7,17 +7,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { TeamsComponent } from './teams/teams.component';
 import { IconsComponent } from './icons/icons.component';
-import { HomeComponent } from './home/home.component';
-import { CirclesComponent } from './home/circles/circles.component';
-import { HeroComponent } from './home/hero/hero.component';
-import { LatestComponent } from './home/latest/latest.component';
-import { MissionComponent } from './home/mission/mission.component';
-import { FooterComponent } from './footer/footer.component';
-import { LatestIconsComponent } from './home/latest/latest-icons/latest-icons.component';
-import { LatestTitleComponent } from './home/latest/latest-title/latest-title.component';
-import { FooterSocialComponent } from './footer/footer-social/footer-social.component';
-import { FooterQuoteComponent } from './footer/footer-quote/footer-quote.component';
-import { FooterNavComponent } from './footer/footer-nav/footer-nav.component';
+import { HomeModule } from './home/home.module';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -26,21 +17,12 @@ import { FooterNavComponent } from './footer/footer-nav/footer-nav.component';
     AboutComponent,
     TeamsComponent,
     IconsComponent,
-    HomeComponent,
-    CirclesComponent,
-    HeroComponent,
-    LatestComponent,
-    MissionComponent,
-    FooterComponent,
-    LatestIconsComponent,
-    LatestTitleComponent,
-    FooterSocialComponent,
-    FooterQuoteComponent,
-    FooterNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomeModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
