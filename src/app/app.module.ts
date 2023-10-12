@@ -12,7 +12,12 @@ import { CirclesComponent } from './home/circles/circles.component';
 import { HeroComponent } from './home/hero/hero.component';
 import { LatestComponent } from './home/latest/latest.component';
 import { MissionComponent } from './home/mission/mission.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { LatestIconsComponent } from './home/latest/latest-icons/latest-icons.component';
+import { LatestTitleComponent } from './home/latest/latest-title/latest-title.component';
+import { FooterSocialComponent } from './footer/footer-social/footer-social.component';
+import { FooterQuoteComponent } from './footer/footer-quote/footer-quote.component';
+import { FooterNavComponent } from './footer/footer-nav/footer-nav.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,13 @@ import { MissionComponent } from './home/mission/mission.component';
     CirclesComponent,
     HeroComponent,
     LatestComponent,
-    MissionComponent
+    MissionComponent,
+    FooterComponent,
+    LatestIconsComponent,
+    LatestTitleComponent,
+    FooterSocialComponent,
+    FooterQuoteComponent,
+    FooterNavComponent
   ],
   imports: [
     BrowserModule,
