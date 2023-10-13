@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { TeamsComponent } from './teams/teams.component';
-import { IconsComponent } from './icons/icons.component';
 import { HomeModule } from './home/home.module';
 import { FooterModule } from './footer/footer.module';
+import { IconsModule } from './icons/icons.module';
 
 @NgModule({
   declarations: [
@@ -16,15 +16,15 @@ import { FooterModule } from './footer/footer.module';
     NavigationComponent,
     AboutComponent,
     TeamsComponent,
-    IconsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    FooterModule
+    FooterModule,
+    IconsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
